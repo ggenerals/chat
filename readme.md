@@ -1,16 +1,18 @@
 ## Chat room
 
-借助 Cloudflare 托管的在线聊天室。
+借助 Cloudflare 托管的在线聊天室，支持 $\LaTeX$ 和 markdown。
 
-支持 root 创建/删除用户、管理全员权限。
+可通过 admin(root) 的 GUI 界面创建/删除用户、管理全员权限。
 
-支持聊天室 BOT，借助 cloudflare 加密储存您的 API KEY。
+拥有相关指令的管理员可以通过 `/指令` 的方式管理成员。
+
+支持聊天室 BOT，借助 Cloudflare 加密储存您的 API KEY。
 
 更多指令可通过 `/help` 进行查看。
 
 ### Quick Start
 #### 1. 环境准备
-确保你已安装 [Node.js (v16+)](https://nodejs.org/?spm=a2ty_o01.29997173.0.0.47e355fbf3zPjw) 并拥有 [Cloudflare](https://dash.cloudflare.com/sign-up?spm=a2ty_o01.29997173.0.0.47e355fbf3zPjw) 账号。
+确保你已安装 [Node.js (v16+)](https://nodejs.org/?spm=a2ty_o01.29997173.0.0.47e355fbf3zPjw) 并拥有 [Cloudflare](https://dash.Cloudflare.com/sign-up?spm=a2ty_o01.29997173.0.0.47e355fbf3zPjw) 账号。
 
 ```bash
 # 克隆项目
