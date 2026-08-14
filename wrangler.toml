@@ -1,0 +1,21 @@
+name = "durable-chat-room"
+main = "src/index.js"
+compatibility_date = "2026-08-11"
+
+[[durable_objects.bindings]]
+name = "CHAT_ROOM"
+class_name = "ChatRoom"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["ChatRoom"]   # 原来是 new_classes = ["ChatRoom"]
+
+# 让本地 users.json 作为文本模块打包进 Worker
+[[rules]]
+  type = "Text"
+  globs = ["**/*.json"]
+  fallthrough = true
+  
+[vars]
+AI_API_URL = "https://api.deepseek.com/chat/completions"
+AI_MODEL = "deepseek-v4-flash"
